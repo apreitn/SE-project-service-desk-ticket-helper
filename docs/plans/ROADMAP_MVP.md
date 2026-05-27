@@ -43,15 +43,31 @@ Develop a simple MVP of a Service Desk Ticket Helper application that improves t
 ---
 
 # Phase 3 — Ticket Logic
+
+## Status
+Complete
+
 ## Goals
 - Generate structured ticket output
 - Validate required fields
 - Improve usability
+- Implement validation logic as a reusable module
+
+## Completed work
+- Created ticket validation module
+- Implemented validation using the Strategy Pattern
+- Added required field validation strategy
+- Added minimum length validation strategy
+- Updated architecture documentation
 
 ## Deliverables
-- Ticket preview
-- Validation logic
-- Export/copy functionality
+- Ticket validation module
+- Strategy-based validation logic
+- Updated Mermaid architecture diagram
+- Module README documentation
+
+## Scope adjustments
+The original roadmap planned simple validation logic. During implementation, the scope was slightly adjusted to use the Strategy Pattern. This makes the code more modular and easier to extend in future versions.
 
 ---
 
