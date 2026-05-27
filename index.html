@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Desk Ticket Helper</title>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <h1>Service Desk Ticket Helper</h1>
+      <p>
+        Create a structured IT support ticket with the minimum required information
+        for troubleshooting or escalation.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Ticket form</h2>
+
+      <form id="ticketForm" class="ticket-form">
+        <div class="form-group">
+          <label for="userName">User name *</label>
+          <input type="text" id="userName" name="userName" />
+        </div>
+
+        <div class="form-group">
+          <label for="deviceName">Device name *</label>
+          <input type="text" id="deviceName" name="deviceName" />
+        </div>
+
+        <div class="form-group">
+          <label for="issueCategory">Issue category *</label>
+          <select id="issueCategory" name="issueCategory">
+            <option value="">Select category</option>
+            <option value="Outlook">Outlook</option>
+            <option value="Teams">Teams</option>
+            <option value="OneDrive">OneDrive</option>
+            <option value="Printer">Printer</option>
+            <option value="Network">Network</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="problemDescription">Problem description *</label>
+          <textarea id="problemDescription" name="problemDescription" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="businessImpact">Business impact *</label>
+          <textarea id="businessImpact" name="businessImpact" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="primary-button">Validate ticket</button>
+      </form>
+    </section>
+
+    <section class="card result-card">
+      <h2>Validation result</h2>
+      <div id="validationResult" class="result-box">
+        Fill in the form and click “Validate ticket”.
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
