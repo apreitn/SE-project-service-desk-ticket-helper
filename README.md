@@ -1,5 +1,12 @@
 # SE-project-service-desk-ticket-helper
 A simple tool for creating structured IT support tickets. 
+
+## Live Demo
+
+The deployed application is available here:
+
+https://apreitn.github.io/SE-project-service-desk-ticket-helper/
+
 # Service Desk Ticket Helper
 
 ## Product idea
